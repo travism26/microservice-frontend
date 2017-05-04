@@ -8,7 +8,13 @@ import Header from "./Header";
 class Layout extends Component {
   constructor() {
     super();
-    this.name="Travis Martin"
+    this.state = {
+      title: "Welcome",
+      name: "Username" };
+  }
+
+  changeTitle(title){
+    this.setState({title});
   }
 
   getVal(){
@@ -17,18 +23,17 @@ class Layout extends Component {
 
   render() {
     var funct = this.getVal();
+    // setTimeout(() => {
+    //   this.setState({name: "bob"})
+    // }, 1000)
+    // setTimeout(() => {
+    //   this.setState({title: "Welcome Trav"})
+    // }, 2000);
+    const title = "Welcome Travis!";
     return (
       <div className="App">
-        <Header />
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p>This is a paragraph tag</p>
-        <h2> {this.name}</h2>
+        {this.state.name}
+        <Header changeTitle={this.changeTitle.bind(this)} title={this.state.title} />
         <Footer />
       </div>
     );
