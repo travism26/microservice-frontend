@@ -1,8 +1,7 @@
-import React, { Component } from 'react';
+// import React, { Component } from 'react';
 //import logo from './logo.svg';
 //import './App.css';
 
-import Layout from "./pages/Layout"
+// import Layout from "./pages/Layout"
 
-
-export default Layout;
+// export default Layout;
