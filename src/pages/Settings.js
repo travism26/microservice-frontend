@@ -1,20 +1,14 @@
 import React, { Component } from 'react';
 import logo from './../logo.svg';
 import '../App.css';
-import { Link } from 'react-router';
 
-
-class Layout extends Component {
+export default class Settings extends Component {
   render() {
     const title = "Welcome Travis!";
     return (
       <div className="App">
-        <h1>hello world</h1>
-        {this.props.children}
-        <Link to="archives">archives</Link>
+        <h1>Settings</h1>
       </div>
     );
   }
 }
-
-export default Layout;
