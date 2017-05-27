@@ -21,10 +21,10 @@ export default class Archives extends React.Component {
     ].map((title, i) => <Article key={i} title={title}/> );
 
     return (
-      <div>
+      <div className="App">
         <h1>Archives</h1>
         article: {article}, date: {date}, filter: {filter}
-        <div class="row">{Articles}</div>
+        <div className="row">{Articles}</div>
       </div>
     );
   }
