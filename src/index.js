@@ -10,6 +10,7 @@ import Archives from "./pages/Archives"
 import Featured from "./pages/Featured"
 import Layout from "./pages/Layout"
 import Settings from "./pages/Settings"
+import Todos from "./pages/Todos"
 
 // ReactDOM.render(
 //   <Layout />,
@@ -22,6 +23,7 @@ ReactDOM.render(
 			<IndexRoute component={Featured}></IndexRoute>
 			<Route path="archives(/:article)" component={Archives}></Route>
 			<Route path="settings" component={Settings}></Route>
+			<Route path="todos" component={Todos}></Route>
 		</Route>
 	</Router>,
 document.getElementById('root'));

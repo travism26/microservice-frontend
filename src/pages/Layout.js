@@ -21,7 +21,7 @@ class Layout extends Component {
         <div className="container" style={containerStyle}>
           <div className="row">
             <div className="col-lg-12">
-              <h1>KillerNews.net</h1>
+              <h1>Travis' News</h1>
               {this.props.children}
             </div>
           </div>
