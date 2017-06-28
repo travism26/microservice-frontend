@@ -21,6 +21,7 @@ export default class Nav extends React.Component {
     const archivesClass = location.pathname.match(/^\/archives/) ? "active" : "";
     const settingsClass = location.pathname.match(/^\/settings/) ? "active" : "";
     const todosClass    = location.pathname.match(/^\/todos/) ? "active" : "";
+    const reduxClass    = location.pathname.match(/^\/redux/) ? "active" : "";
     const navClass = collapsed ? "collapse" : "";
 
     return (
@@ -47,6 +48,9 @@ export default class Nav extends React.Component {
               </li>
               <li className={todosClass}>
                 <Link to="todos" onClick={this.toggleCollapse.bind(this)}>Todos</Link>
+              </li>
+              <li className={reduxClass}>
+                <Link to="reduxtest" onClick={this.toggleCollapse.bind(this)}>Redux</Link>
               </li>
             </ul>
           </div>

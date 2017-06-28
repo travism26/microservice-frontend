@@ -2,15 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import './index.css';
-import './client.min.js'
+//import './client.min.js'
 import Bootstrap from "./vendor/bootstrap-without-jquery"
 import { Router, Route, IndexRoute, browserHistory } from "react-router";
 
-import Archives from "./pages/Archives"
-import Featured from "./pages/Featured"
-import Layout from "./pages/Layout"
-import Settings from "./pages/Settings"
-import Todos from "./pages/Todos"
+import Archives from "./pages/Archives";
+import Featured from "./pages/Featured";
+import Layout from "./pages/Layout";
+import ReduxTest from "./pages/ReduxTest";
+import Settings from "./pages/Settings";
+import Todos from "./pages/Todos";
 
 // ReactDOM.render(
 //   <Layout />,
@@ -24,6 +25,7 @@ ReactDOM.render(
 			<Route path="archives(/:article)" component={Archives}></Route>
 			<Route path="settings" component={Settings}></Route>
 			<Route path="todos" component={Todos}></Route>
+			<Route path="reduxtest" component={ReduxTest}></Route>
 		</Route>
 	</Router>,
 document.getElementById('root'));
